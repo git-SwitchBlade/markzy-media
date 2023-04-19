@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markzy Media</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="blob"></div>
+    <div class="blur"></div>
+
+    <nav>
+        <h2 class="logo">MARKZY MEDIA</h2>
+        <ul class="links">
+            <li class="nav-links"><a href="#" id="a-link">MORE</a></li>
+        </ul>
+    </nav>
+
+
+
+    <script type="text/javascript">
+        var blob = document.getElementById("blob");
+        document.addEventListener('mousemove', function(e){
+            var x = e.clientX;
+            var y = e.clientY;
+            blob.animate({
+                left : x + "px",
+                top : y + "px"
+            }, {duration: 2500, fill: "forwards"});
+        });
+    </script>
+</body>
+</html>
