@@ -11,25 +11,34 @@
     <div id="blob"></div>
     <div class="blur"></div>
 
-    <nav>
-        <h2 class="logo">MARKZY MEDIA</h2>
-        <ul class="links">
-            <li class="nav-links"><a href="#" id="a-link">MORE</a></li>
-        </ul>
-    </nav>
 
+    <div class="navbar">
+        <div class="site-logo">Markzy.</div>
+        <button class="menu-toggle" id="menu-toggle-open">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+    </div>
+    
+      
+      <div class="menu">
+        <div class="menu-container">
+      
+          <button class="menu-toggle" id="menu-toggle-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+      
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
 
-
-    <script type="text/javascript">
-        var blob = document.getElementById("blob");
-        document.addEventListener('mousemove', function(e){
-            var x = e.clientX;
-            var y = e.clientY;
-            blob.animate({
-                left : x + "px",
-                top : y + "px"
-            }, {duration: 2500, fill: "forwards"});
-        });
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
 </body>
 </html>
