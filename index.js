@@ -6,10 +6,8 @@ window.onpointermove = event => {
   blob.animate({
     left: `${clientX}px`,
     top: `${clientY}px`
-  }, { duration: 4000, fill: "forwards" });
+  }, { duration: 3000, fill: "forwards" });
 }
-
-
 
 const menuToggleOpen = document.querySelector("#menu-toggle-open");
 const menuToggleClose = document.querySelector("#menu-toggle-close");
@@ -33,12 +31,7 @@ tl.from(".menu nav a", {
   stagger: 0.1
 });
 
-tl.from(".social", {
-  y: 40,
-  opacity: 0,
-  duration: 0.4,
-  ease: "expo.out"
-});
+
 
 menuToggleOpen.addEventListener("click", () => tl.play());
 menuToggleClose.addEventListener("click", () => tl.reverse());
